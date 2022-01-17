@@ -5,7 +5,7 @@ import { ElementHomeComponent } from './element-home/element-home.component';
 
 const routes: Routes = [
   {
-    path:"elements",
+    path:"",
     component:ElementHomeComponent
   }
 ];
