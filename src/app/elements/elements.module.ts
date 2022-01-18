@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { ElementsRoutingModule } from './elements-routing.module';
 import { ElementHomeComponent } from './element-home/element-home.component';
+import { ElementPlaceholderComponent } from './element-placeholder/element-placeholder.component';
 
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
-    ElementHomeComponent
+    ElementHomeComponent,
+    ElementPlaceholderComponent
   ],
   imports: [
     CommonModule,
-    ElementsRoutingModule
+    ElementsRoutingModule,
+    SharedModule
   ],
   exports:[]
 })
