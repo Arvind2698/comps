@@ -6,11 +6,13 @@ import { ElementHomeComponent } from './element-home/element-home.component';
 import { ElementPlaceholderComponent } from './element-placeholder/element-placeholder.component';
 
 import { SharedModule } from '../shared/shared.module';
+import { ElementSegmentComponent } from './element-segment/element-segment.component';
 
 @NgModule({
   declarations: [
     ElementHomeComponent,
-    ElementPlaceholderComponent
+    ElementPlaceholderComponent,
+    ElementSegmentComponent
   ],
   imports: [
     CommonModule,
