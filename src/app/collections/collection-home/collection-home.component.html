@@ -4,3 +4,20 @@
     </header>
 </app-divider>
 <app-collection-table [data]="data" [headers]="headers"></app-collection-table>
+<br>
+<app-divider>
+    <header>
+        Tab Menu
+    </header>
+</app-divider>
+<app-collection-tabs>
+    <a class="item" [routerLink]="'./'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }">
+        Biography
+    </a>
+    <a class="item" routerLink="./companies" routerLinkActive="active">
+        Companies
+    </a>
+    <a class="item active" routerLink="./partners" routerLinkActive="active">
+        Partners
+    </a>
+</app-collection-tabs>

@@ -6,11 +6,19 @@ import { CollectionHomeComponent } from './collection-home/collection-home.compo
 import { CollectionTableComponent } from './collection-table/collection-table.component';
 
 import { SharedModule } from '../shared/shared.module';
+import { CollectionTabsComponent } from './collection-tabs/collection-tabs.component';
+import { BiographyComponent } from './collection-tabs/biography/biography.component';
+import { CompaniesComponent } from './collection-tabs/companies/companies.component';
+import { PartnersComponent } from './collection-tabs/partners/partners.component';
 
 @NgModule({
   declarations: [
     CollectionHomeComponent,
-    CollectionTableComponent
+    CollectionTableComponent,
+    CollectionTabsComponent,
+    BiographyComponent,
+    CompaniesComponent,
+    PartnersComponent
   ],
   imports: [
     CommonModule,
