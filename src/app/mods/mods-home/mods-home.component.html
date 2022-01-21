@@ -1,0 +1,11 @@
+<app-divider>
+    <header>Modal Component</header>
+</app-divider>
+<button class="ui primary button
+" (click)="switchModelView()">Click Me</button>
+<app-mods-model *ngIf="modelShow" (close)="switchModelView()"></app-mods-model>
+<br><br>
+<app-divider>
+    <header>Accordion Component</header>
+</app-divider>
+<app-mods-accordion [accordionData]="accordionData"></app-mods-accordion>

@@ -1,0 +1,25 @@
+<div class="ui dimmer visible active" (click)="onCloseClick()">
+    <div class="ui modal visible active" (click)="$event.stopPropagation()">
+        <div class="header">
+            <span>Lorem ipsum dolor sit amet.</span>
+        </div>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="https://semantic-ui.com/images/avatar/large/chris.jpg" width="200px">
+            </div>
+            <div class="description">
+                <div class="ui header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta culpa debitis.</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus est quisquam delectus voluptatibus ipsa obcaecati fugiat, nisi dolores, distinctio asperiores quam. Ut rem magni aspernatur.</p>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui black deny button" (click)="onCloseClick()">
+                Nope :(
+            </div>
+            <div class="ui positive right labeled icon button" (click)="onCloseClick()">
+                Yep :)
+                <i class="checkmark icon"></i>
+            </div>
+        </div>
+    </div>
+</div>

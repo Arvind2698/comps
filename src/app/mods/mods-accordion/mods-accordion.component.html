@@ -1,0 +1,14 @@
+<div class="ui accordion">
+
+    <ng-container *ngFor="let item of accordionData;let i=index" >
+        <div class="title" [ngClass]="{active: currentOpenIndex===i}" (click)="onClickLabel(i)">
+            <i class="dropdown icon"></i>
+            {{item.label}}
+        </div>
+        <div class="content" [ngClass]="{active: currentOpenIndex===i}" (click)="onClickLabel(i)">
+            <p [ngClass]="{'transition visible': currentOpenIndex===i,'transition hidden': currentOpenIndex!==i }" >
+                {{item.content}}</p>
+        </div>
+    </ng-container>
+
+</div>
