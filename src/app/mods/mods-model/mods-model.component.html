@@ -1,7 +1,8 @@
 <div class="ui dimmer visible active" (click)="onCloseClick()">
     <div class="ui modal visible active" (click)="$event.stopPropagation()">
-        <div class="header">
+        <div class="header " style="display: flex;">
             <span>Lorem ipsum dolor sit amet.</span>
+            <i class="close icon" style="margin-left: auto;" (click)="onCloseClick()"></i>
         </div>
         <div class="image content">
             <div class="ui medium image">
